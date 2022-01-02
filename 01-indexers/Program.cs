@@ -25,6 +25,17 @@ namespace _01_indexers
             genericIndexer[9] = 53;
             for (int i = 0; i < genericIndexer.Length;i++)
                 Console.WriteLine(genericIndexer[i]);
+            
+            OverloadIndexer strStore = new OverloadIndexer();
+            strStore[0] = "One";
+            strStore[1] = "Two";
+            strStore[2] = "Three";
+            strStore[3] = "Four";
+            
+            Console.WriteLine(strStore["one"]);
+            Console.WriteLine(strStore["two"]);
+            Console.WriteLine(strStore["Three"]);
+            Console.WriteLine(strStore["Four"]);
         }
     }
 }
